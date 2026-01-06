@@ -1,0 +1,24 @@
+title: Alexar Habitat
+description: 我的个人博客
+baseurl: ""
+url: "https://alexarhabitat.github.io"
+
+# 构建设置
+markdown: kramdown
+highlighter: rouge
+
+# 文章设置
+permalink: /:year/:month/:day/:title/
+
+# 集合
+collections:
+  posts:
+    output: true
+
+# 默认值
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

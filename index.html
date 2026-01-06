@@ -1,0 +1,19 @@
+---
+layout: default
+title: 首页
+---
+<h1>欢迎来到我的博客</h1>
+<p>这里是 Alexar Habitat 的个人空间。</p>
+
+<h2>最新文章</h2>
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y年%m月%d日" }}</time>
+    {% if post.excerpt %}
+    <p class="excerpt">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
