@@ -22,3 +22,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+# 主题
+theme: minima 

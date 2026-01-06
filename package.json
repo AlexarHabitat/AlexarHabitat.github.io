@@ -1,0 +1,10 @@
+{
+  "name": "alexar-habitat",
+  "version": "1.0.0",
+  "description": "Jekyll site for Alexar Habitat",
+  "scripts": {
+    "start": "C:\\Ruby34-x64\\bin\\jekyll serve",
+    "build": "C:\\Ruby34-x64\\bin\\jekyll build",
+    "dev": "C:\\Ruby34-x64\\bin\\jekyll serve --livereload"
+  }
+}
